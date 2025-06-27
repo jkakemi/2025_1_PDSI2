@@ -13,7 +13,7 @@ app = FastAPI()
 # colocar pasta.main:app exemplo
 @app.get("/")
 def read_root():
-    return {"Hello": "lala"}   
+    return {"Hello": "lele"}   
 
 @app.post("/criar")
 def criar_valores(nova_mensagem: classes.Mensagem, db: Session = Depends(get_db)):

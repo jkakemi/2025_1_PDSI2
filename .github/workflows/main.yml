@@ -31,6 +31,9 @@ jobs:
        run: sleep 15
      - name: Executar pytest
        env:
-        DATABASE_URL: postgresql://admin:localhost@5432/marathon_database
+        DB_USER: postgres
+        DB_PASSWORD: admin
+        DB_DATABASE: marathon_database
+        DB_HOST: localhost
        run: pytest teste.py
  

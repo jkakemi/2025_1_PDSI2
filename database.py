@@ -3,6 +3,8 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 user = os.getenv("DB_USER")
 password = os.getenv("DB_PASSWORD")
 database = os.getenv("DB_DATABASE")
